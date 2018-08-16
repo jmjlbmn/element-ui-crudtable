@@ -1,5 +1,5 @@
 # CrudTable
-用于Element-UI的增删改查数据表格,暂未开源,目前仅为托管文档
+用于Element-UI的增删改查数据表格
 
 ## 属性props
 ### 全局属性
