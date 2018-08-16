@@ -225,15 +225,15 @@ export default {
       log("新增");
       this.editModel = Object.assign({}, this.editDefault);
       this.editVisible = true;
-      this.$emit("openAdd");
-      this.$emit("openAddOrEdit");
+      this.$emit("open-add");
+      this.$emit("open-edit");
     },
     edit(row) {
       log("编辑", row);
       this.editModel = Object.assign({}, this.editDefault);
       this.editVisible = true;
-      this.$emit("openEdit", row);
-      this.$emit("openAddOrEdit", row);
+      this.$emit("open-update", row);
+      this.$emit("open-edit", row);
       if (this.api.get) {
         log("获取记录id=" + row[this.idKey]);
         this.api.get(row[this.idKey]).then(res => {
